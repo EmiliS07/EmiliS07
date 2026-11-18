@@ -1,0 +1,38 @@
+
+<svg width="1000" height="20" viewBox="0 0 1000 20" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="repeat">
+      <stop offset="0%" stop-color="#8F65F7"/>
+      <stop offset="25%" stop-color="#00C2FF"/>
+      <stop offset="50%" stop-color="#FF0A4C"/>
+      <stop offset="75%" stop-color="#8F65F7"/>
+      <stop offset="100%" stop-color="#8F65F7"/>
+      <animateTransform
+        attributeName="gradientTransform"
+        type="translate"
+        from="0 0"
+        to="1000 0"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </linearGradient>
+
+    <linearGradient id="fade">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="10%" stop-color="white" stop-opacity="1"/>
+      <stop offset="90%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <mask id="lineMask">
+      <rect width="1000" height="20" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <rect x="0" y="9" width="1000" height="2" rx="1"
+    fill="url(#g2)" mask="url(#lineMask)"/>
+
+  <rect x="494" y="6" width="12" height="12"
+    transform="rotate(45 500 12)"
+    fill="#8F65F7"/>
+</svg>
