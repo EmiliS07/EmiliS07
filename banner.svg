@@ -1,0 +1,244 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset=".6" stop-color="#13102a"/>
+      <stop offset="1" stop-color="#1e1140"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#8A5CFF" stroke-opacity=".07"/>
+    </pattern>
+
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity=".16"/>
+    </pattern>
+
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8A5CFF" stop-opacity=".25"/>
+      <stop offset=".6" stop-color="#8A5CFF" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#8A5CFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A5CFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#8A5CFF" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#8A5CFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="frame"><rect width="1200" height="320" rx="18"/></clipPath>
+    <clipPath id="sl1"><rect x="0" y="108" width="1200" height="18"/></clipPath>
+    <clipPath id="sl2"><rect x="0" y="150" width="1200" height="14"/></clipPath>
+
+    <g id="rose">
+      <path d="M0 8C-8 12-14 4-9-2C-14-9-5-14 0-8C5-15 14-8 9-2C16 4 8 12 0 8Z"
+        fill="#2D9CFF" fill-opacity=".3" stroke="#2D9CFF" stroke-width="1.8"/>
+      <path d="M-7 1C-11-5-3-10 1-5C7-11 12-3 6 1C11 7 2 10-2 5C-7 7-9 2-5 0C-2-3 3 0 1 3"
+        fill="#2D9CFF" fill-opacity=".5" stroke="#69C8FF" stroke-width="1.5"/>
+      <path d="M-2 1C-5-3 1-7 4-3C7 1 1 5 0 2C-1 1 1 0 2 1"
+        fill="none" stroke="#B6EAFF" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <style>
+    .t{font-family:'Consolas','Menlo','DejaVu Sans Mono','Courier New',monospace;font-weight:800;font-size:105px;letter-spacing:-2px;text-anchor:middle}
+    .sub{font-family:'Consolas','Menlo','DejaVu Sans Mono','Courier New',monospace;font-size:19px;letter-spacing:5px;text-anchor:middle;fill:#c9d1d9}
+    .hud{font-family:'Consolas','Menlo','DejaVu Sans Mono','Courier New',monospace;font-size:15px;fill:#8A5CFF;opacity:.75}
+    .g2{animation:g2 4s infinite .15s}
+    .s1{animation:sl 5s infinite}
+    .s2{animation:sl 5s infinite reverse .3s}
+    .fl{animation:fl 4s ease-in-out infinite}
+    .d2{animation-delay:-2s}
+    .d3{animation-delay:-3s}
+    .tw{animation:tw 2.4s ease-in-out infinite}
+    .k1{animation-delay:-.6s}
+    .k2{animation-delay:-1.2s}
+    .k3{animation-delay:-1.8s}
+    .cur{animation:bl 1s steps(1) infinite}
+    .bar{animation:sc 5s linear infinite}
+    .fk{animation:fk 6s infinite}
+
+    @keyframes g2{0%,86%,100%{transform:translate(0,0)}88%{transform:translate(8px,-1px)}91%{transform:translate(-6px,2px)}94%{transform:translate(3px,0)}}
+    @keyframes sl{0%,82%,90%,100%{transform:translateX(0);opacity:0}83%{opacity:1}84%{transform:translateX(-26px);opacity:1}86%{transform:translateX(20px);opacity:1}88%{transform:translateX(-8px);opacity:1}}
+    @keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(6deg)}}
+    @keyframes tw{0%,100%{opacity:.1}50%{opacity:.7}}
+    @keyframes bl{0%{opacity:1}50%{opacity:0}}
+    @keyframes sc{from{transform:translateY(-90px)}to{transform:translateY(340px)}}
+    @keyframes fk{0%,100%{opacity:.75}61%{opacity:.75}62%{opacity:.4}64%{opacity:.75}66%{opacity:.5}67%{opacity:.75}}
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <ellipse cx="600" cy="160" rx="460" ry="150" fill="url(#glow)"/>
+
+    <!-- CIRCUITOS IZQUIERDA: TRAZOS LARGOS Y DISPERSOS -->
+    <g class="fk" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+      <g stroke="#7660B5" stroke-width="2" opacity=".38">
+        <path d="M0 25 H55 V48 H125 V70 H205 V91 H330 V105 H440"/>
+        <path d="M0 105 H80 V125 H160 V145 H255 V165 H375 V180 H445"/>
+        <path d="M0 220 H65 V195 H145 V210 H235 V230 H340 V245 H440"/>
+        <path d="M25 320 V285 H100 V265 H185 V245 H280 V225 H410"/>
+      </g>
+
+      <g stroke="#3982B0" stroke-width="1.8" opacity=".4">
+        <path d="M0 165 H45 V145 H110 V125 H195 V105 H310 V90 H420"/>
+        <path d="M15 300 H95 V280 H180 V260 H275 V240 H390"/>
+        <path d="M75 0 V38 H150 V60 H235 V82 H340"/>
+      </g>
+
+      <g stroke="#A34B64" stroke-width="1.6" opacity=".34">
+        <path d="M0 270 H55 V250 H130 V230 H220 V210 H325"/>
+        <path d="M120 320 V290 H195 V270 H290 V250 H380"/>
+      </g>
+
+      <!-- NODOS DISCRETOS -->
+      <g fill="#7660B5" opacity=".6">
+        <circle cx="125" cy="70" r="3"/>
+        <circle cx="255" cy="165" r="3"/>
+        <circle cx="235" cy="230" r="3"/>
+        <circle cx="185" cy="245" r="3"/>
+        <circle cx="340" cy="105" r="3"/>
+      </g>
+
+      <g fill="#3982B0" opacity=".6">
+        <circle cx="195" cy="105" r="3"/>
+        <circle cx="275" cy="240" r="3"/>
+      </g>
+
+      <!-- PUNTOS -->
+      <g fill="#7660B5" opacity=".6">
+        <circle cx="55" cy="48" r="2.5"/>
+        <circle cx="80" cy="125" r="2.5"/>
+        <circle cx="100" cy="265" r="2.5"/>
+      </g>
+
+      <!-- CHIPS -->
+      <g stroke="#3982B0" stroke-width="1.5" fill="#13102a" opacity=".65">
+        <rect x="65" y="270" width="22" height="22" rx="2"/>
+        <path d="M70 266V270 M78 266V270 M86 266V270 M70 292V296 M78 292V296 M86 292V296"/>
+        <rect x="105" y="80" width="22" height="22" rx="2"/>
+        <path d="M110 76V80 M118 76V80 M122 102V106"/>
+      </g>
+    </g>
+
+    <!-- CIRCUITOS DERECHA: TRAZOS LARGOS Y DISPERSOS -->
+    <g class="fk d2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+      <g stroke="#7660B5" stroke-width="2" opacity=".38">
+        <path d="M1200 25 H1145 V48 H1075 V70 H995 V91 H870 V105 H760"/>
+        <path d="M1200 105 H1120 V125 H1040 V145 H945 V165 H825 V180 H755"/>
+        <path d="M1200 220 H1135 V195 H1055 V210 H965 V230 H860 V245 H760"/>
+        <path d="M1175 320 V285 H1100 V265 H1015 V245 H920 V225 H790"/>
+      </g>
+
+      <g stroke="#3982B0" stroke-width="1.8" opacity=".4">
+        <path d="M1200 165 H1155 V145 H1090 V125 H1005 V105 H890 V90 H780"/>
+        <path d="M1185 300 H1105 V280 H1020 V260 H925 V240 H810"/>
+        <path d="M1125 0 V38 H1050 V60 H965 V82 H860"/>
+      </g>
+
+      <g stroke="#A34B64" stroke-width="1.6" opacity=".34">
+        <path d="M1200 270 H1145 V250 H1070 V230 H980 V210 H875"/>
+        <path d="M1080 320 V290 H1005 V270 H910 V250 H820"/>
+      </g>
+
+      <!-- NODOS DISCRETOS -->
+      <g fill="#7660B5" opacity=".6">
+        <circle cx="1075" cy="70" r="3"/>
+        <circle cx="945" cy="165" r="3"/>
+        <circle cx="965" cy="230" r="3"/>
+        <circle cx="1015" cy="245" r="3"/>
+        <circle cx="860" cy="105" r="3"/>
+      </g>
+
+      <g fill="#3982B0" opacity=".6">
+        <circle cx="1005" cy="105" r="3"/>
+        <circle cx="925" cy="240" r="3"/>
+      </g>
+
+      <g fill="#7660B5" opacity=".6">
+        <circle cx="1145" cy="48" r="2.5"/>
+        <circle cx="1120" cy="125" r="2.5"/>
+        <circle cx="1100" cy="265" r="2.5"/>
+      </g>
+
+      <!-- CHIPS -->
+      <g stroke="#3982B0" stroke-width="1.5" fill="#13102a" opacity=".65">
+        <rect x="1110" y="270" width="22" height="22" rx="2"/>
+        <path d="M1115 266V270 M1123 266V270 M1131 266V270 M1115 292V296 M1123 292V296"/>
+        <rect x="1070" y="30" width="22" height="22" rx="2"/>
+        <path d="M1075 26V30 M1083 26V30 M1091 26V30"/>
+      </g>
+    </g>
+
+    <!-- DESTELLOS -->
+    <g fill="#8A5CFF">
+      <circle class="tw" cx="230" cy="70" r="2.2"/>
+      <circle class="tw k1" cx="318" cy="250" r="1.8"/>
+      <circle class="tw k2" cx="884" cy="262" r="2.2"/>
+      <circle class="tw k3" cx="960" cy="48" r="1.8"/>
+    </g>
+
+    <g fill="#2D9CFF">
+      <path class="tw k2" d="M258 210h12M264 204v12" stroke="#2D9CFF" stroke-width="2"/>
+      <path class="tw k1" d="M932 120h12M938 114v12" stroke="#2D9CFF" stroke-width="2"/>
+    </g>
+
+    <!-- ROSAS AZULES -->
+    <g transform="translate(860 40)">
+      <g class="fl d2"><use href="#rose" transform="translate(13 13) scale(1.1)"/></g>
+    </g>
+    <g transform="translate(330 196)">
+      <g class="fl d3"><use href="#rose" transform="translate(11 11)"/></g>
+    </g>
+    <g transform="translate(990 236)">
+      <g class="fl d3"><use href="#rose" transform="translate(9 9) scale(.8)"/></g>
+    </g>
+
+    <!-- TITULO -->
+    <g class="g2">
+      <text class="t" x="604" y="170" fill="#FF2A4D">EmiliSpotato</text>
+    </g>
+    <text class="t" x="600" y="170" fill="#ffffff">EmiliSpotato</text>
+
+    <g clip-path="url(#sl1)">
+      <g class="s1">
+        <text class="t" x="600" y="170" fill="#FF2A4D">EmiliSpotato</text>
+      </g>
+    </g>
+
+    <g clip-path="url(#sl2)">
+      <g class="s2">
+        <text class="t" x="600" y="170" fill="#2D9CFF">EmiliSpotato</text>
+      </g>
+    </g>
+
+    <!-- SUBTITULO -->
+    <rect x="390" y="208" width="420" height="2" fill="#8A5CFF" opacity=".5"/>
+    <text class="sub" x="600" y="246">
+      <tspan fill="#8A5CFF"></tspan> C
+      <tspan fill="#2D9CFF"> ✦ </tspan>C++
+      <tspan fill="#FF2A4D"> ✦ </tspan>JAVA
+    </text>
+
+    <!-- HUD -->
+    <text class="hud" x="40" y="44">&gt; whoami</text>
+    <rect class="cur" x="122" y="31" width="9" height="16" fill="#8A5CFF"/>
+
+    <text class="hud" x="1160" y="282" text-anchor="end" style="fill:#2D9CFF">● online</text>
+
+    <path d="M24 60V24h36M1140 24h36v36M24 260v36h36M1140 296h36v-36"
+      fill="none" stroke="#8A5CFF" stroke-width="2" opacity=".6"/>
+
+    <!-- CRT -->
+    <rect class="bar" x="0" y="0" width="1200" height="90" fill="url(#bar)"/>
+    <rect width="1200" height="320" fill="url(#scan)"/>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="318" rx="17"
+    fill="none" stroke="#8A5CFF" stroke-opacity=".35" stroke-width="2"/>
+</svg>
